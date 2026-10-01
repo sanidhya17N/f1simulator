@@ -1,0 +1,1961 @@
+{
+  "drivers": [
+    {
+      "id": "ms_2004",
+      "name": "Michael Schumacher",
+      "era": "2004",
+      "pac": 98,
+      "rac": 97,
+      "wet": 99,
+      "con": 97
+    },
+    {
+      "id": "rb_2004",
+      "name": "Rubens Barrichello",
+      "era": "2004",
+      "pac": 88,
+      "rac": 86,
+      "wet": 84,
+      "con": 90
+    },
+    {
+      "id": "ms_2002",
+      "name": "Michael Schumacher",
+      "era": "2002",
+      "pac": 97,
+      "rac": 97,
+      "wet": 99,
+      "con": 96
+    },
+    {
+      "id": "rb_2002",
+      "name": "Rubens Barrichello",
+      "era": "2002",
+      "pac": 86,
+      "rac": 84,
+      "wet": 82,
+      "con": 88
+    },
+    {
+      "id": "ms_2000",
+      "name": "Michael Schumacher",
+      "era": "2000",
+      "pac": 96,
+      "rac": 96,
+      "wet": 98,
+      "con": 94
+    },
+    {
+      "id": "rb_2000",
+      "name": "Rubens Barrichello",
+      "era": "2000",
+      "pac": 85,
+      "rac": 84,
+      "wet": 80,
+      "con": 86
+    },
+    {
+      "id": "nl_1977",
+      "name": "Niki Lauda",
+      "era": "1977",
+      "pac": 94,
+      "rac": 93,
+      "wet": 90,
+      "con": 95
+    },
+    {
+      "id": "cr_1977",
+      "name": "Carlos Reutemann",
+      "era": "1977",
+      "pac": 88,
+      "rac": 87,
+      "wet": 85,
+      "con": 87
+    },
+    {
+      "id": "js_1979",
+      "name": "Jody Scheckter",
+      "era": "1979",
+      "pac": 90,
+      "rac": 88,
+      "wet": 86,
+      "con": 89
+    },
+    {
+      "id": "gv_1979",
+      "name": "Gilles Villeneuve",
+      "era": "1979",
+      "pac": 93,
+      "rac": 95,
+      "wet": 94,
+      "con": 78
+    },
+    {
+      "id": "cl_2021",
+      "name": "Charles Leclerc",
+      "era": "2021",
+      "pac": 92,
+      "rac": 90,
+      "wet": 88,
+      "con": 86
+    },
+    {
+      "id": "cs_2021",
+      "name": "Carlos Sainz",
+      "era": "2021",
+      "pac": 88,
+      "rac": 91,
+      "wet": 86,
+      "con": 90
+    },
+    {
+      "id": "cl_2022",
+      "name": "Charles Leclerc",
+      "era": "2022",
+      "pac": 94,
+      "rac": 91,
+      "wet": 89,
+      "con": 84
+    },
+    {
+      "id": "cs_2022",
+      "name": "Carlos Sainz",
+      "era": "2022",
+      "pac": 90,
+      "rac": 92,
+      "wet": 87,
+      "con": 91
+    },
+    {
+      "id": "cl_2024",
+      "name": "Charles Leclerc",
+      "era": "2024",
+      "pac": 93,
+      "rac": 91,
+      "wet": 90,
+      "con": 88
+    },
+    {
+      "id": "cs_2024",
+      "name": "Carlos Sainz",
+      "era": "2024",
+      "pac": 90,
+      "rac": 92,
+      "wet": 88,
+      "con": 92
+    },
+    {
+      "id": "as_1988",
+      "name": "Ayrton Senna",
+      "era": "1988",
+      "pac": 99,
+      "rac": 97,
+      "wet": 100,
+      "con": 92
+    },
+    {
+      "id": "ap_1988",
+      "name": "Alain Prost",
+      "era": "1988",
+      "pac": 96,
+      "rac": 95,
+      "wet": 92,
+      "con": 97
+    },
+    {
+      "id": "as_1989",
+      "name": "Ayrton Senna",
+      "era": "1989",
+      "pac": 98,
+      "rac": 97,
+      "wet": 100,
+      "con": 91
+    },
+    {
+      "id": "ap_1989",
+      "name": "Alain Prost",
+      "era": "1989",
+      "pac": 95,
+      "rac": 96,
+      "wet": 91,
+      "con": 96
+    },
+    {
+      "id": "mh_1998",
+      "name": "Mika Häkkinen",
+      "era": "1998",
+      "pac": 95,
+      "rac": 92,
+      "wet": 90,
+      "con": 94
+    },
+    {
+      "id": "dc_1998",
+      "name": "David Coulthard",
+      "era": "1998",
+      "pac": 88,
+      "rac": 86,
+      "wet": 84,
+      "con": 89
+    },
+    {
+      "id": "lh_2008",
+      "name": "Lewis Hamilton",
+      "era": "2008",
+      "pac": 94,
+      "rac": 94,
+      "wet": 95,
+      "con": 90
+    },
+    {
+      "id": "hk_2008",
+      "name": "Heikki Kovalainen",
+      "era": "2008",
+      "pac": 84,
+      "rac": 82,
+      "wet": 80,
+      "con": 85
+    },
+    {
+      "id": "ln_2021",
+      "name": "Lando Norris",
+      "era": "2021",
+      "pac": 88,
+      "rac": 87,
+      "wet": 86,
+      "con": 89
+    },
+    {
+      "id": "dr_2021",
+      "name": "Daniel Ricciardo",
+      "era": "2021",
+      "pac": 85,
+      "rac": 90,
+      "wet": 88,
+      "con": 84
+    },
+    {
+      "id": "ln_2024",
+      "name": "Lando Norris",
+      "era": "2024",
+      "pac": 95,
+      "rac": 92,
+      "wet": 91,
+      "con": 92
+    },
+    {
+      "id": "op_2024",
+      "name": "Oscar Piastri",
+      "era": "2024",
+      "pac": 92,
+      "rac": 90,
+      "wet": 88,
+      "con": 91
+    },
+    {
+      "id": "nm_1992",
+      "name": "Nigel Mansell",
+      "era": "1992",
+      "pac": 95,
+      "rac": 93,
+      "wet": 88,
+      "con": 90
+    },
+    {
+      "id": "rp_1992",
+      "name": "Riccardo Patrese",
+      "era": "1992",
+      "pac": 88,
+      "rac": 86,
+      "wet": 84,
+      "con": 89
+    },
+    {
+      "id": "dh_1996",
+      "name": "Damon Hill",
+      "era": "1996",
+      "pac": 91,
+      "rac": 88,
+      "wet": 86,
+      "con": 92
+    },
+    {
+      "id": "jv_1996",
+      "name": "Jacques Villeneuve",
+      "era": "1996",
+      "pac": 90,
+      "rac": 91,
+      "wet": 85,
+      "con": 88
+    },
+    {
+      "id": "jv_1997",
+      "name": "Jacques Villeneuve",
+      "era": "1997",
+      "pac": 91,
+      "rac": 92,
+      "wet": 86,
+      "con": 89
+    },
+    {
+      "id": "hhf_1997",
+      "name": "Heinz-Harald Frentzen",
+      "era": "1997",
+      "pac": 87,
+      "rac": 85,
+      "wet": 84,
+      "con": 88
+    },
+    {
+      "id": "jpm_2003",
+      "name": "Juan Pablo Montoya",
+      "era": "2003",
+      "pac": 91,
+      "rac": 93,
+      "wet": 86,
+      "con": 82
+    },
+    {
+      "id": "rs_2003",
+      "name": "Ralf Schumacher",
+      "era": "2003",
+      "pac": 86,
+      "rac": 84,
+      "wet": 82,
+      "con": 85
+    },
+    {
+      "id": "gr_2021",
+      "name": "George Russell",
+      "era": "2021",
+      "pac": 89,
+      "rac": 88,
+      "wet": 86,
+      "con": 91
+    },
+    {
+      "id": "nl_2021",
+      "name": "Nicholas Latifi",
+      "era": "2021",
+      "pac": 72,
+      "rac": 70,
+      "wet": 70,
+      "con": 78
+    },
+    {
+      "id": "sv_2010",
+      "name": "Sebastian Vettel",
+      "era": "2010",
+      "pac": 94,
+      "rac": 90,
+      "wet": 88,
+      "con": 91
+    },
+    {
+      "id": "mw_2010",
+      "name": "Mark Webber",
+      "era": "2010",
+      "pac": 89,
+      "rac": 91,
+      "wet": 90,
+      "con": 90
+    },
+    {
+      "id": "sv_2011",
+      "name": "Sebastian Vettel",
+      "era": "2011",
+      "pac": 96,
+      "rac": 91,
+      "wet": 90,
+      "con": 94
+    },
+    {
+      "id": "mw_2011",
+      "name": "Mark Webber",
+      "era": "2011",
+      "pac": 88,
+      "rac": 90,
+      "wet": 89,
+      "con": 89
+    },
+    {
+      "id": "sv_2013",
+      "name": "Sebastian Vettel",
+      "era": "2013",
+      "pac": 97,
+      "rac": 92,
+      "wet": 91,
+      "con": 95
+    },
+    {
+      "id": "mw_2013",
+      "name": "Mark Webber",
+      "era": "2013",
+      "pac": 87,
+      "rac": 89,
+      "wet": 88,
+      "con": 88
+    },
+    {
+      "id": "mv_2021",
+      "name": "Max Verstappen",
+      "era": "2021",
+      "pac": 97,
+      "rac": 96,
+      "wet": 95,
+      "con": 94
+    },
+    {
+      "id": "sp_2021",
+      "name": "Sergio Pérez",
+      "era": "2021",
+      "pac": 87,
+      "rac": 90,
+      "wet": 85,
+      "con": 88
+    },
+    {
+      "id": "mv_2022",
+      "name": "Max Verstappen",
+      "era": "2022",
+      "pac": 98,
+      "rac": 95,
+      "wet": 96,
+      "con": 96
+    },
+    {
+      "id": "sp_2022",
+      "name": "Sergio Pérez",
+      "era": "2022",
+      "pac": 88,
+      "rac": 91,
+      "wet": 86,
+      "con": 89
+    },
+    {
+      "id": "mv_2023",
+      "name": "Max Verstappen",
+      "era": "2023",
+      "pac": 98,
+      "rac": 94,
+      "wet": 97,
+      "con": 97
+    },
+    {
+      "id": "sp_2023",
+      "name": "Sergio Pérez",
+      "era": "2023",
+      "pac": 87,
+      "rac": 89,
+      "wet": 85,
+      "con": 88
+    },
+    {
+      "id": "lh_2014",
+      "name": "Lewis Hamilton",
+      "era": "2014",
+      "pac": 96,
+      "rac": 94,
+      "wet": 97,
+      "con": 95
+    },
+    {
+      "id": "nr_2014",
+      "name": "Nico Rosberg",
+      "era": "2014",
+      "pac": 92,
+      "rac": 90,
+      "wet": 88,
+      "con": 93
+    },
+    {
+      "id": "lh_2015",
+      "name": "Lewis Hamilton",
+      "era": "2015",
+      "pac": 97,
+      "rac": 95,
+      "wet": 98,
+      "con": 96
+    },
+    {
+      "id": "nr_2015",
+      "name": "Nico Rosberg",
+      "era": "2015",
+      "pac": 93,
+      "rac": 91,
+      "wet": 89,
+      "con": 94
+    },
+    {
+      "id": "nr_2016",
+      "name": "Nico Rosberg",
+      "era": "2016",
+      "pac": 94,
+      "rac": 92,
+      "wet": 90,
+      "con": 95
+    },
+    {
+      "id": "lh_2016",
+      "name": "Lewis Hamilton",
+      "era": "2016",
+      "pac": 97,
+      "rac": 95,
+      "wet": 98,
+      "con": 94
+    },
+    {
+      "id": "lh_2019",
+      "name": "Lewis Hamilton",
+      "era": "2019",
+      "pac": 97,
+      "rac": 95,
+      "wet": 98,
+      "con": 96
+    },
+    {
+      "id": "vb_2019",
+      "name": "Valtteri Bottas",
+      "era": "2019",
+      "pac": 89,
+      "rac": 86,
+      "wet": 85,
+      "con": 91
+    },
+    {
+      "id": "lh_2020",
+      "name": "Lewis Hamilton",
+      "era": "2020",
+      "pac": 98,
+      "rac": 95,
+      "wet": 98,
+      "con": 97
+    },
+    {
+      "id": "vb_2020",
+      "name": "Valtteri Bottas",
+      "era": "2020",
+      "pac": 88,
+      "rac": 85,
+      "wet": 84,
+      "con": 90
+    },
+    {
+      "id": "lh_2021",
+      "name": "Lewis Hamilton",
+      "era": "2021",
+      "pac": 97,
+      "rac": 96,
+      "wet": 98,
+      "con": 96
+    },
+    {
+      "id": "vb_2021",
+      "name": "Valtteri Bottas",
+      "era": "2021",
+      "pac": 87,
+      "rac": 84,
+      "wet": 84,
+      "con": 89
+    },
+    {
+      "id": "lh_2022",
+      "name": "Lewis Hamilton",
+      "era": "2022",
+      "pac": 94,
+      "rac": 94,
+      "wet": 97,
+      "con": 93
+    },
+    {
+      "id": "gr_2022",
+      "name": "George Russell",
+      "era": "2022",
+      "pac": 91,
+      "rac": 90,
+      "wet": 88,
+      "con": 92
+    },
+    {
+      "id": "ma_1978",
+      "name": "Mario Andretti",
+      "era": "1978",
+      "pac": 93,
+      "rac": 92,
+      "wet": 88,
+      "con": 90
+    },
+    {
+      "id": "rp_1978",
+      "name": "Ronnie Peterson",
+      "era": "1978",
+      "pac": 92,
+      "rac": 93,
+      "wet": 90,
+      "con": 85
+    },
+    {
+      "id": "as_1985",
+      "name": "Ayrton Senna",
+      "era": "1985",
+      "pac": 96,
+      "rac": 95,
+      "wet": 99,
+      "con": 88
+    },
+    {
+      "id": "eda_1985",
+      "name": "Elio de Angelis",
+      "era": "1985",
+      "pac": 86,
+      "rac": 85,
+      "wet": 82,
+      "con": 87
+    },
+    {
+      "id": "jb_2009",
+      "name": "Jenson Button",
+      "era": "2009",
+      "pac": 91,
+      "rac": 90,
+      "wet": 94,
+      "con": 93
+    },
+    {
+      "id": "rb_2009",
+      "name": "Rubens Barrichello",
+      "era": "2009",
+      "pac": 86,
+      "rac": 85,
+      "wet": 84,
+      "con": 88
+    },
+    {
+      "id": "fa_2005",
+      "name": "Fernando Alonso",
+      "era": "2005",
+      "pac": 95,
+      "rac": 97,
+      "wet": 94,
+      "con": 94
+    },
+    {
+      "id": "gf_2005",
+      "name": "Giancarlo Fisichella",
+      "era": "2005",
+      "pac": 86,
+      "rac": 85,
+      "wet": 84,
+      "con": 87
+    },
+    {
+      "id": "fa_2006",
+      "name": "Fernando Alonso",
+      "era": "2006",
+      "pac": 95,
+      "rac": 98,
+      "wet": 94,
+      "con": 94
+    },
+    {
+      "id": "gf_2006",
+      "name": "Giancarlo Fisichella",
+      "era": "2006",
+      "pac": 85,
+      "rac": 84,
+      "wet": 83,
+      "con": 86
+    },
+    {
+      "id": "ms_1995",
+      "name": "Michael Schumacher",
+      "era": "1995",
+      "pac": 96,
+      "rac": 97,
+      "wet": 98,
+      "con": 93
+    },
+    {
+      "id": "jh_1995",
+      "name": "Johnny Herbert",
+      "era": "1995",
+      "pac": 84,
+      "rac": 82,
+      "wet": 80,
+      "con": 85
+    },
+    {
+      "id": "ja_1990",
+      "name": "Jean Alesi",
+      "era": "1990",
+      "pac": 88,
+      "rac": 92,
+      "wet": 90,
+      "con": 80
+    },
+    {
+      "id": "sn_1990",
+      "name": "Satoru Nakajima",
+      "era": "1990",
+      "pac": 78,
+      "rac": 76,
+      "wet": 74,
+      "con": 80
+    },
+    {
+      "id": "dh_1997",
+      "name": "Damon Hill",
+      "era": "1997",
+      "pac": 88,
+      "rac": 86,
+      "wet": 84,
+      "con": 86
+    },
+    {
+      "id": "pd_1997",
+      "name": "Pedro Diniz",
+      "era": "1997",
+      "pac": 74,
+      "rac": 72,
+      "wet": 72,
+      "con": 78
+    },
+    {
+      "id": "pm_1985",
+      "name": "Pierluigi Martini",
+      "era": "1985",
+      "pac": 72,
+      "rac": 70,
+      "wet": 70,
+      "con": 75
+    },
+    {
+      "id": "adc_1985",
+      "name": "Andrea de Cesaris",
+      "era": "1985",
+      "pac": 76,
+      "rac": 78,
+      "wet": 74,
+      "con": 68
+    },
+    {
+      "id": "jm_1982",
+      "name": "Jochen Mass",
+      "era": "1982",
+      "pac": 78,
+      "rac": 76,
+      "wet": 76,
+      "con": 80
+    },
+    {
+      "id": "rbo_1982",
+      "name": "Raul Boesel",
+      "era": "1982",
+      "pac": 72,
+      "rac": 70,
+      "wet": 70,
+      "con": 74
+    },
+    {
+      "id": "hhf_1999",
+      "name": "Heinz-Harald Frentzen",
+      "era": "1999",
+      "pac": 88,
+      "rac": 86,
+      "wet": 85,
+      "con": 87
+    },
+    {
+      "id": "dh_1999",
+      "name": "Damon Hill",
+      "era": "1999",
+      "pac": 84,
+      "rac": 82,
+      "wet": 82,
+      "con": 85
+    },
+    {
+      "id": "jb_2004",
+      "name": "Jenson Button",
+      "era": "2004",
+      "pac": 88,
+      "rac": 87,
+      "wet": 90,
+      "con": 89
+    },
+    {
+      "id": "ts_2004",
+      "name": "Takuma Sato",
+      "era": "2004",
+      "pac": 82,
+      "rac": 84,
+      "wet": 80,
+      "con": 78
+    },
+    {
+      "id": "jt_2005",
+      "name": "Jarno Trulli",
+      "era": "2005",
+      "pac": 85,
+      "rac": 82,
+      "wet": 82,
+      "con": 86
+    },
+    {
+      "id": "rs_2005",
+      "name": "Ralf Schumacher",
+      "era": "2005",
+      "pac": 84,
+      "rac": 83,
+      "wet": 80,
+      "con": 84
+    },
+    {
+      "id": "kk_2009",
+      "name": "Kamui Kobayashi",
+      "era": "2009",
+      "pac": 82,
+      "rac": 88,
+      "wet": 84,
+      "con": 78
+    },
+    {
+      "id": "gf_2009",
+      "name": "Giancarlo Fisichella",
+      "era": "2009",
+      "pac": 83,
+      "rac": 82,
+      "wet": 82,
+      "con": 85
+    },
+    {
+      "id": "fa_2021",
+      "name": "Fernando Alonso",
+      "era": "2021",
+      "pac": 90,
+      "rac": 97,
+      "wet": 94,
+      "con": 91
+    },
+    {
+      "id": "eo_2021",
+      "name": "Esteban Ocon",
+      "era": "2021",
+      "pac": 84,
+      "rac": 85,
+      "wet": 82,
+      "con": 86
+    },
+    {
+      "id": "fa_2023",
+      "name": "Fernando Alonso",
+      "era": "2023",
+      "pac": 91,
+      "rac": 98,
+      "wet": 95,
+      "con": 92
+    },
+    {
+      "id": "ls_2023",
+      "name": "Lance Stroll",
+      "era": "2023",
+      "pac": 80,
+      "rac": 78,
+      "wet": 78,
+      "con": 82
+    },
+    {
+      "id": "rg_2018",
+      "name": "Romain Grosjean",
+      "era": "2018",
+      "pac": 84,
+      "rac": 86,
+      "wet": 82,
+      "con": 76
+    },
+    {
+      "id": "km_2018",
+      "name": "Kevin Magnussen",
+      "era": "2018",
+      "pac": 83,
+      "rac": 85,
+      "wet": 80,
+      "con": 82
+    },
+    {
+      "id": "yt_2023",
+      "name": "Yuki Tsunoda",
+      "era": "2023",
+      "pac": 84,
+      "rac": 86,
+      "wet": 82,
+      "con": 83
+    },
+    {
+      "id": "dr_2023",
+      "name": "Daniel Ricciardo",
+      "era": "2023",
+      "pac": 85,
+      "rac": 88,
+      "wet": 86,
+      "con": 84
+    },
+    {
+      "id": "kr_2020",
+      "name": "Kimi Räikkönen",
+      "era": "2020",
+      "pac": 84,
+      "rac": 88,
+      "wet": 90,
+      "con": 86
+    },
+    {
+      "id": "ag_2020",
+      "name": "Antonio Giovinazzi",
+      "era": "2020",
+      "pac": 78,
+      "rac": 76,
+      "wet": 76,
+      "con": 80
+    },
+    {
+      "id": "sv_2008",
+      "name": "Sebastian Vettel",
+      "era": "2008",
+      "pac": 90,
+      "rac": 88,
+      "wet": 86,
+      "con": 88
+    },
+    {
+      "id": "sb_2008",
+      "name": "Sébastien Bourdais",
+      "era": "2008",
+      "pac": 80,
+      "rac": 82,
+      "wet": 78,
+      "con": 82
+    },
+    {
+      "id": "rk_2008",
+      "name": "Robert Kubica",
+      "era": "2008",
+      "pac": 91,
+      "rac": 93,
+      "wet": 92,
+      "con": 90
+    },
+    {
+      "id": "nh_2008",
+      "name": "Nick Heidfeld",
+      "era": "2008",
+      "pac": 86,
+      "rac": 85,
+      "wet": 90,
+      "con": 89
+    },
+    {
+      "id": "sn_1988",
+      "name": "Satoru Nakajima",
+      "era": "1988",
+      "pac": 76,
+      "rac": 74,
+      "wet": 72,
+      "con": 78
+    },
+    {
+      "id": "nl_1976",
+      "name": "Niki Lauda",
+      "era": "1976",
+      "pac": 95,
+      "rac": 94,
+      "wet": 90,
+      "con": 95
+    },
+    {
+      "id": "cre_1976",
+      "name": "Clay Regazzoni",
+      "era": "1976",
+      "pac": 86,
+      "rac": 88,
+      "wet": 84,
+      "con": 85
+    },
+    {
+      "id": "as_1991",
+      "name": "Ayrton Senna",
+      "era": "1991",
+      "pac": 98,
+      "rac": 97,
+      "wet": 100,
+      "con": 93
+    },
+    {
+      "id": "gb_1991",
+      "name": "Gerhard Berger",
+      "era": "1991",
+      "pac": 89,
+      "rac": 90,
+      "wet": 86,
+      "con": 88
+    },
+    {
+      "id": "nm_1986",
+      "name": "Nigel Mansell",
+      "era": "1986",
+      "pac": 93,
+      "rac": 94,
+      "wet": 86,
+      "con": 86
+    },
+    {
+      "id": "np_1986",
+      "name": "Nelson Piquet",
+      "era": "1986",
+      "pac": 92,
+      "rac": 93,
+      "wet": 88,
+      "con": 91
+    },
+    {
+      "id": "as_1993",
+      "name": "Ayrton Senna",
+      "era": "1993",
+      "pac": 98,
+      "rac": 96,
+      "wet": 100,
+      "con": 90
+    },
+    {
+      "id": "lh_2018",
+      "name": "Lewis Hamilton",
+      "era": "2018",
+      "pac": 96,
+      "rac": 95,
+      "wet": 98,
+      "con": 95
+    },
+    {
+      "id": "fa_2012",
+      "name": "Fernando Alonso",
+      "era": "2012",
+      "pac": 94,
+      "rac": 99,
+      "wet": 96,
+      "con": 96
+    },
+    {
+      "id": "kr_2007",
+      "name": "Kimi Räikkönen",
+      "era": "2007",
+      "pac": 94,
+      "rac": 90,
+      "wet": 93,
+      "con": 92
+    },
+    {
+      "id": "ms_2001",
+      "name": "Michael Schumacher",
+      "era": "2001",
+      "pac": 97,
+      "rac": 96,
+      "wet": 99,
+      "con": 95
+    }
+  ],
+  "constructors": [
+    {
+      "id": "fer_04",
+      "name": "Ferrari F2004",
+      "year": 2004,
+      "aero": 98,
+      "eng": 97,
+      "rel": 98,
+      "color": "#E10600"
+    },
+    {
+      "id": "fer_02",
+      "name": "Ferrari F2002",
+      "year": 2002,
+      "aero": 96,
+      "eng": 95,
+      "rel": 94,
+      "color": "#E10600"
+    },
+    {
+      "id": "fer_00",
+      "name": "Ferrari F1-2000",
+      "year": 2000,
+      "aero": 92,
+      "eng": 93,
+      "rel": 90,
+      "color": "#E10600"
+    },
+    {
+      "id": "fer_77",
+      "name": "Ferrari 312T2",
+      "year": 1977,
+      "aero": 88,
+      "eng": 90,
+      "rel": 78,
+      "color": "#E10600"
+    },
+    {
+      "id": "fer_79",
+      "name": "Ferrari 312T4",
+      "year": 1979,
+      "aero": 89,
+      "eng": 88,
+      "rel": 80,
+      "color": "#E10600"
+    },
+    {
+      "id": "fer_21",
+      "name": "Ferrari SF21",
+      "year": 2021,
+      "aero": 86,
+      "eng": 92,
+      "rel": 84,
+      "color": "#E10600"
+    },
+    {
+      "id": "fer_22",
+      "name": "Ferrari F1-75",
+      "year": 2022,
+      "aero": 93,
+      "eng": 91,
+      "rel": 82,
+      "color": "#E10600"
+    },
+    {
+      "id": "fer_24",
+      "name": "Ferrari SF-24",
+      "year": 2024,
+      "aero": 91,
+      "eng": 92,
+      "rel": 86,
+      "color": "#E10600"
+    },
+    {
+      "id": "mcl_88",
+      "name": "McLaren MP4/4",
+      "year": 1988,
+      "aero": 99,
+      "eng": 99,
+      "rel": 92,
+      "color": "#FF8700"
+    },
+    {
+      "id": "mcl_89",
+      "name": "McLaren MP4/5",
+      "year": 1989,
+      "aero": 95,
+      "eng": 96,
+      "rel": 90,
+      "color": "#FF8700"
+    },
+    {
+      "id": "mcl_98",
+      "name": "McLaren MP4/13",
+      "year": 1998,
+      "aero": 95,
+      "eng": 91,
+      "rel": 89,
+      "color": "#FF8700"
+    },
+    {
+      "id": "mcl_08",
+      "name": "McLaren MP4-23",
+      "year": 2008,
+      "aero": 92,
+      "eng": 91,
+      "rel": 88,
+      "color": "#FF8700"
+    },
+    {
+      "id": "mcl_21",
+      "name": "McLaren MCL35M",
+      "year": 2021,
+      "aero": 84,
+      "eng": 86,
+      "rel": 88,
+      "color": "#FF8700"
+    },
+    {
+      "id": "mcl_24",
+      "name": "McLaren MCL38",
+      "year": 2024,
+      "aero": 98,
+      "eng": 94,
+      "rel": 95,
+      "color": "#FF8700"
+    },
+    {
+      "id": "wil_92",
+      "name": "Williams FW14B",
+      "year": 1992,
+      "aero": 98,
+      "eng": 93,
+      "rel": 91,
+      "color": "#00A0DE"
+    },
+    {
+      "id": "wil_96",
+      "name": "Williams FW18",
+      "year": 1996,
+      "aero": 96,
+      "eng": 94,
+      "rel": 90,
+      "color": "#00A0DE"
+    },
+    {
+      "id": "wil_97",
+      "name": "Williams FW19",
+      "year": 1997,
+      "aero": 94,
+      "eng": 92,
+      "rel": 88,
+      "color": "#00A0DE"
+    },
+    {
+      "id": "wil_03",
+      "name": "Williams FW25",
+      "year": 2003,
+      "aero": 86,
+      "eng": 89,
+      "rel": 82,
+      "color": "#00A0DE"
+    },
+    {
+      "id": "wil_21",
+      "name": "Williams FW43B",
+      "year": 2021,
+      "aero": 68,
+      "eng": 80,
+      "rel": 78,
+      "color": "#00A0DE"
+    },
+    {
+      "id": "rbr_10",
+      "name": "Red Bull RB6",
+      "year": 2010,
+      "aero": 94,
+      "eng": 88,
+      "rel": 90,
+      "color": "#1E41FF"
+    },
+    {
+      "id": "rbr_11",
+      "name": "Red Bull RB7",
+      "year": 2011,
+      "aero": 97,
+      "eng": 89,
+      "rel": 92,
+      "color": "#1E41FF"
+    },
+    {
+      "id": "rbr_13",
+      "name": "Red Bull RB9",
+      "year": 2013,
+      "aero": 98,
+      "eng": 90,
+      "rel": 93,
+      "color": "#1E41FF"
+    },
+    {
+      "id": "rbr_21",
+      "name": "Red Bull RB16B",
+      "year": 2021,
+      "aero": 95,
+      "eng": 92,
+      "rel": 91,
+      "color": "#1E41FF"
+    },
+    {
+      "id": "rbr_22",
+      "name": "Red Bull RB18",
+      "year": 2022,
+      "aero": 98,
+      "eng": 95,
+      "rel": 96,
+      "color": "#1E41FF"
+    },
+    {
+      "id": "rbr_23",
+      "name": "Red Bull RB19",
+      "year": 2023,
+      "aero": 99,
+      "eng": 96,
+      "rel": 99,
+      "color": "#1E41FF"
+    },
+    {
+      "id": "mer_14",
+      "name": "Mercedes W05",
+      "year": 2014,
+      "aero": 94,
+      "eng": 99,
+      "rel": 95,
+      "color": "#00D2BE"
+    },
+    {
+      "id": "mer_15",
+      "name": "Mercedes W06",
+      "year": 2015,
+      "aero": 96,
+      "eng": 99,
+      "rel": 96,
+      "color": "#00D2BE"
+    },
+    {
+      "id": "mer_16",
+      "name": "Mercedes W07",
+      "year": 2016,
+      "aero": 96,
+      "eng": 99,
+      "rel": 94,
+      "color": "#00D2BE"
+    },
+    {
+      "id": "mer_19",
+      "name": "Mercedes W10",
+      "year": 2019,
+      "aero": 96,
+      "eng": 97,
+      "rel": 94,
+      "color": "#00D2BE"
+    },
+    {
+      "id": "mer_20",
+      "name": "Mercedes W11",
+      "year": 2020,
+      "aero": 98,
+      "eng": 97,
+      "rel": 96,
+      "color": "#00D2BE"
+    },
+    {
+      "id": "mer_21",
+      "name": "Mercedes W12",
+      "year": 2021,
+      "aero": 95,
+      "eng": 95,
+      "rel": 93,
+      "color": "#00D2BE"
+    },
+    {
+      "id": "mer_22",
+      "name": "Mercedes W13",
+      "year": 2022,
+      "aero": 82,
+      "eng": 91,
+      "rel": 85,
+      "color": "#00D2BE"
+    },
+    {
+      "id": "lot_78",
+      "name": "Lotus 79",
+      "year": 1978,
+      "aero": 94,
+      "eng": 85,
+      "rel": 72,
+      "color": "#000000"
+    },
+    {
+      "id": "lot_85",
+      "name": "Lotus 97T",
+      "year": 1985,
+      "aero": 88,
+      "eng": 91,
+      "rel": 75,
+      "color": "#FFD700"
+    },
+    {
+      "id": "bra_09",
+      "name": "Brawn BGP 001",
+      "year": 2009,
+      "aero": 96,
+      "eng": 88,
+      "rel": 94,
+      "color": "#FFFFFF"
+    },
+    {
+      "id": "ren_05",
+      "name": "Renault R25",
+      "year": 2005,
+      "aero": 92,
+      "eng": 89,
+      "rel": 88,
+      "color": "#FFCC00"
+    },
+    {
+      "id": "ren_06",
+      "name": "Renault R26",
+      "year": 2006,
+      "aero": 93,
+      "eng": 90,
+      "rel": 89,
+      "color": "#FFCC00"
+    },
+    {
+      "id": "ben_95",
+      "name": "Benetton B195",
+      "year": 1995,
+      "aero": 91,
+      "eng": 92,
+      "rel": 86,
+      "color": "#00A651"
+    },
+    {
+      "id": "tyr_90",
+      "name": "Tyrrell 019",
+      "year": 1990,
+      "aero": 72,
+      "eng": 74,
+      "rel": 70,
+      "color": "#0000FF"
+    },
+    {
+      "id": "arr_97",
+      "name": "Arrows A18",
+      "year": 1997,
+      "aero": 70,
+      "eng": 76,
+      "rel": 65,
+      "color": "#FF6600"
+    },
+    {
+      "id": "min_85",
+      "name": "Minardi M185",
+      "year": 1985,
+      "aero": 58,
+      "eng": 62,
+      "rel": 60,
+      "color": "#FFD700"
+    },
+    {
+      "id": "sau_82",
+      "name": "March 821",
+      "year": 1982,
+      "aero": 68,
+      "eng": 70,
+      "rel": 62,
+      "color": "#FFFFFF"
+    },
+    {
+      "id": "jor_99",
+      "name": "Jordan 199",
+      "year": 1999,
+      "aero": 83,
+      "eng": 85,
+      "rel": 79,
+      "color": "#FFD700"
+    },
+    {
+      "id": "bar_04",
+      "name": "BAR 006",
+      "year": 2004,
+      "aero": 85,
+      "eng": 87,
+      "rel": 81,
+      "color": "#FFFFFF"
+    },
+    {
+      "id": "toy_05",
+      "name": "Toyota TF105",
+      "year": 2005,
+      "aero": 80,
+      "eng": 86,
+      "rel": 83,
+      "color": "#EB0A1E"
+    },
+    {
+      "id": "sai_09",
+      "name": "BMW Sauber C28",
+      "year": 2009,
+      "aero": 74,
+      "eng": 78,
+      "rel": 80,
+      "color": "#C0C0C0"
+    },
+    {
+      "id": "alp_21",
+      "name": "Alpine A521",
+      "year": 2021,
+      "aero": 80,
+      "eng": 82,
+      "rel": 78,
+      "color": "#0090FF"
+    },
+    {
+      "id": "ast_23",
+      "name": "Aston Martin AMR23",
+      "year": 2023,
+      "aero": 86,
+      "eng": 89,
+      "rel": 87,
+      "color": "#006F62"
+    },
+    {
+      "id": "has_18",
+      "name": "Haas VF-18",
+      "year": 2018,
+      "aero": 76,
+      "eng": 85,
+      "rel": 72,
+      "color": "#FFFFFF"
+    },
+    {
+      "id": "atr_23",
+      "name": "AlphaTauri AT04",
+      "year": 2023,
+      "aero": 78,
+      "eng": 89,
+      "rel": 84,
+      "color": "#2B4562"
+    },
+    {
+      "id": "alf_20",
+      "name": "Alfa Romeo C39",
+      "year": 2020,
+      "aero": 75,
+      "eng": 83,
+      "rel": 80,
+      "color": "#9B0000"
+    },
+    {
+      "id": "tor_08",
+      "name": "Toro Rosso STR3",
+      "year": 2008,
+      "aero": 79,
+      "eng": 83,
+      "rel": 81,
+      "color": "#0000FF"
+    },
+    {
+      "id": "bmw_08",
+      "name": "BMW Sauber F1.08",
+      "year": 2008,
+      "aero": 87,
+      "eng": 89,
+      "rel": 86,
+      "color": "#FFFFFF"
+    },
+    {
+      "id": "hon_88",
+      "name": "Honda RA168E*",
+      "year": 1988,
+      "aero": 86,
+      "eng": 97,
+      "rel": 88,
+      "color": "#FFFFFF"
+    },
+    {
+      "id": "bra_76",
+      "name": "Ferrari 312T2",
+      "year": 1976,
+      "aero": 87,
+      "eng": 90,
+      "rel": 76,
+      "color": "#E10600"
+    },
+    {
+      "id": "mcl_91",
+      "name": "McLaren MP4/6",
+      "year": 1991,
+      "aero": 91,
+      "eng": 93,
+      "rel": 87,
+      "color": "#FF8700"
+    },
+    {
+      "id": "wil_86",
+      "name": "Williams FW11",
+      "year": 1986,
+      "aero": 92,
+      "eng": 94,
+      "rel": 83,
+      "color": "#00A0DE"
+    }
+  ],
+  "principals": [
+    {
+      "id": "jt_04",
+      "name": "Jean Todt",
+      "era": "Ferrari Peak",
+      "year": 2004,
+      "tac": 98,
+      "rnd": 95
+    },
+    {
+      "id": "jt_00",
+      "name": "Jean Todt",
+      "era": "Ferrari Ascend",
+      "year": 2000,
+      "tac": 96,
+      "rnd": 94
+    },
+    {
+      "id": "briatore_05",
+      "name": "Flavio Briatore",
+      "era": "Renault Peak",
+      "year": 2005,
+      "tac": 90,
+      "rnd": 88
+    },
+    {
+      "id": "horner_13",
+      "name": "Christian Horner",
+      "era": "Red Bull Peak",
+      "year": 2013,
+      "tac": 95,
+      "rnd": 96
+    },
+    {
+      "id": "horner_23",
+      "name": "Christian Horner",
+      "era": "RB19 Era",
+      "year": 2023,
+      "tac": 96,
+      "rnd": 97
+    },
+    {
+      "id": "wolff_20",
+      "name": "Toto Wolff",
+      "era": "Mercedes Peak",
+      "year": 2020,
+      "tac": 97,
+      "rnd": 96
+    },
+    {
+      "id": "wolff_15",
+      "name": "Toto Wolff",
+      "era": "Hybrid Dawn",
+      "year": 2015,
+      "tac": 95,
+      "rnd": 97
+    },
+    {
+      "id": "dennis_98",
+      "name": "Ron Dennis",
+      "era": "McLaren Peak",
+      "year": 1998,
+      "tac": 93,
+      "rnd": 92
+    },
+    {
+      "id": "dennis_88",
+      "name": "Ron Dennis",
+      "era": "MP4/4",
+      "year": 1988,
+      "tac": 94,
+      "rnd": 93
+    },
+    {
+      "id": "williams_92",
+      "name": "Frank Williams",
+      "era": "FW14B",
+      "year": 1992,
+      "tac": 92,
+      "rnd": 94
+    },
+    {
+      "id": "stella_24",
+      "name": "Andrea Stella",
+      "era": "McLaren Revival",
+      "year": 2024,
+      "tac": 93,
+      "rnd": 95
+    },
+    {
+      "id": "vasseur_24",
+      "name": "Frédéric Vasseur",
+      "era": "Ferrari Rebuild",
+      "year": 2024,
+      "tac": 90,
+      "rnd": 89
+    },
+    {
+      "id": "brown_09",
+      "name": "Ross Brawn",
+      "era": "Brawn Miracle",
+      "year": 2009,
+      "tac": 99,
+      "rnd": 94
+    },
+    {
+      "id": "brown_04",
+      "name": "Ross Brawn",
+      "era": "Ferrari Peak",
+      "year": 2004,
+      "tac": 98,
+      "rnd": 96
+    },
+    {
+      "id": "newey_92",
+      "name": "Adrian Newey*",
+      "era": "Design God",
+      "year": 1992,
+      "tac": 88,
+      "rnd": 99
+    },
+    {
+      "id": "newey_13",
+      "name": "Adrian Newey*",
+      "era": "Design God",
+      "year": 2013,
+      "tac": 90,
+      "rnd": 99
+    },
+    {
+      "id": "capito_21",
+      "name": "Jost Capito",
+      "era": "Williams Rebuild",
+      "year": 2021,
+      "tac": 78,
+      "rnd": 80
+    },
+    {
+      "id": "seidl_21",
+      "name": "Andreas Seidl",
+      "era": "McLaren Climb",
+      "year": 2021,
+      "tac": 88,
+      "rnd": 87
+    },
+    {
+      "id": "mateschitz_10",
+      "name": "Dietrich Mateschitz",
+      "era": "Energy Drink Era",
+      "year": 2010,
+      "tac": 85,
+      "rnd": 90
+    },
+    {
+      "id": "ecclestone_70",
+      "name": "Bernie Ecclestone",
+      "era": "Brabham Years",
+      "year": 1970,
+      "tac": 88,
+      "rnd": 82
+    }
+  ],
+  "tracks": [
+    {
+      "id": "aus",
+      "name": "Australia GP",
+      "flag": "🇦🇺",
+      "aeroWeight": 0.35,
+      "engineWeight": 0.35,
+      "driverWeight": 0.3,
+      "baseRainChance": 0.15
+    },
+    {
+      "id": "bhr",
+      "name": "Bahrain GP",
+      "flag": "🇧🇭",
+      "aeroWeight": 0.32,
+      "engineWeight": 0.4,
+      "driverWeight": 0.28,
+      "baseRainChance": 0.05
+    },
+    {
+      "id": "sau",
+      "name": "Saudi Arabia GP",
+      "flag": "🇸🇦",
+      "aeroWeight": 0.25,
+      "engineWeight": 0.45,
+      "driverWeight": 0.3,
+      "baseRainChance": 0.02
+    },
+    {
+      "id": "jpn",
+      "name": "Japan GP",
+      "flag": "🇯🇵",
+      "aeroWeight": 0.42,
+      "engineWeight": 0.28,
+      "driverWeight": 0.3,
+      "baseRainChance": 0.25
+    },
+    {
+      "id": "chn",
+      "name": "China GP",
+      "flag": "🇨🇳",
+      "aeroWeight": 0.35,
+      "engineWeight": 0.35,
+      "driverWeight": 0.3,
+      "baseRainChance": 0.2
+    },
+    {
+      "id": "mia",
+      "name": "Miami GP",
+      "flag": "🇺🇸",
+      "aeroWeight": 0.3,
+      "engineWeight": 0.4,
+      "driverWeight": 0.3,
+      "baseRainChance": 0.3
+    },
+    {
+      "id": "emi",
+      "name": "Emilia Romagna GP",
+      "flag": "🇮🇹",
+      "aeroWeight": 0.45,
+      "engineWeight": 0.25,
+      "driverWeight": 0.3,
+      "baseRainChance": 0.2
+    },
+    {
+      "id": "mon",
+      "name": "Monaco GP",
+      "flag": "🇲🇨",
+      "aeroWeight": 0.55,
+      "engineWeight": 0.1,
+      "driverWeight": 0.35,
+      "baseRainChance": 0.15
+    },
+    {
+      "id": "can",
+      "name": "Canada GP",
+      "flag": "🇨🇦",
+      "aeroWeight": 0.28,
+      "engineWeight": 0.42,
+      "driverWeight": 0.3,
+      "baseRainChance": 0.35
+    },
+    {
+      "id": "esp",
+      "name": "Spain GP",
+      "flag": "🇪🇸",
+      "aeroWeight": 0.45,
+      "engineWeight": 0.28,
+      "driverWeight": 0.27,
+      "baseRainChance": 0.1
+    },
+    {
+      "id": "aut",
+      "name": "Austria GP",
+      "flag": "🇦🇹",
+      "aeroWeight": 0.3,
+      "engineWeight": 0.42,
+      "driverWeight": 0.28,
+      "baseRainChance": 0.2
+    },
+    {
+      "id": "gbr",
+      "name": "Silverstone GP",
+      "flag": "🇬🇧",
+      "aeroWeight": 0.4,
+      "engineWeight": 0.35,
+      "driverWeight": 0.25,
+      "baseRainChance": 0.3
+    },
+    {
+      "id": "hun",
+      "name": "Hungary GP",
+      "flag": "🇭🇺",
+      "aeroWeight": 0.48,
+      "engineWeight": 0.2,
+      "driverWeight": 0.32,
+      "baseRainChance": 0.25
+    },
+    {
+      "id": "bel",
+      "name": "Belgium GP",
+      "flag": "🇧🇪",
+      "aeroWeight": 0.32,
+      "engineWeight": 0.4,
+      "driverWeight": 0.28,
+      "baseRainChance": 0.45
+    },
+    {
+      "id": "ned",
+      "name": "Netherlands GP",
+      "flag": "🇳🇱",
+      "aeroWeight": 0.42,
+      "engineWeight": 0.28,
+      "driverWeight": 0.3,
+      "baseRainChance": 0.3
+    },
+    {
+      "id": "ita",
+      "name": "Monza GP",
+      "flag": "🇮🇹",
+      "aeroWeight": 0.15,
+      "engineWeight": 0.6,
+      "driverWeight": 0.25,
+      "baseRainChance": 0.05
+    },
+    {
+      "id": "aze",
+      "name": "Azerbaijan GP",
+      "flag": "🇦🇿",
+      "aeroWeight": 0.22,
+      "engineWeight": 0.48,
+      "driverWeight": 0.3,
+      "baseRainChance": 0.05
+    },
+    {
+      "id": "sin",
+      "name": "Singapore GP",
+      "flag": "🇸🇬",
+      "aeroWeight": 0.4,
+      "engineWeight": 0.25,
+      "driverWeight": 0.35,
+      "baseRainChance": 0.4
+    },
+    {
+      "id": "usa",
+      "name": "United States GP",
+      "flag": "🇺🇸",
+      "aeroWeight": 0.38,
+      "engineWeight": 0.35,
+      "driverWeight": 0.27,
+      "baseRainChance": 0.15
+    },
+    {
+      "id": "mex",
+      "name": "Mexico GP",
+      "flag": "🇲🇽",
+      "aeroWeight": 0.32,
+      "engineWeight": 0.4,
+      "driverWeight": 0.28,
+      "baseRainChance": 0.1
+    },
+    {
+      "id": "bra",
+      "name": "Brazil GP",
+      "flag": "🇧🇷",
+      "aeroWeight": 0.38,
+      "engineWeight": 0.32,
+      "driverWeight": 0.3,
+      "baseRainChance": 0.4
+    },
+    {
+      "id": "lv",
+      "name": "Las Vegas GP",
+      "flag": "🇺🇸",
+      "aeroWeight": 0.2,
+      "engineWeight": 0.52,
+      "driverWeight": 0.28,
+      "baseRainChance": 0.05
+    },
+    {
+      "id": "qat",
+      "name": "Qatar GP",
+      "flag": "🇶🇦",
+      "aeroWeight": 0.36,
+      "engineWeight": 0.36,
+      "driverWeight": 0.28,
+      "baseRainChance": 0.05
+    },
+    {
+      "id": "abu",
+      "name": "Abu Dhabi GP",
+      "flag": "🇦🇪",
+      "aeroWeight": 0.34,
+      "engineWeight": 0.38,
+      "driverWeight": 0.28,
+      "baseRainChance": 0.02
+    }
+  ]
+}
