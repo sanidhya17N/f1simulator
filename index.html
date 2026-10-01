@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0B0C10" />
+  <meta name="description" content="F1 Multiverse — draft legends and chase a 10-race championship." />
+  <title>F1 Multiverse · Paddock</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pitch: '#0B0C10',
+            charcoal: '#1F2833',
+            cyan: '#66FCF1',
+            f1red: '#E10600',
+            slate: '#C5C6C7',
+          },
+          fontFamily: {
+            sans: ['"Barlow Condensed"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+            display: ['"Barlow Condensed"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=27" />
+</head>
+<body class="bg-pitch text-white font-sans antialiased min-h-dvh text-body">
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-pitch/95 backdrop-blur">
+    <div class="mx-auto max-w-3xl px-4 py-2.5">
+      <div class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2 min-w-0">
+          <span class="text-base font-extrabold tracking-widest text-cyan shrink-0">F1 MULTIVERSE</span>
+          <span id="header-round" class="truncate text-xs font-semibold uppercase tracking-wide text-slate">Paddock</span>
+        </div>
+        <div class="flex items-center gap-2 shrink-0">
+          <button type="button" id="nav-home" class="nav-chip">Home</button>
+          <button type="button" id="nav-multi" class="nav-chip">Multi</button>
+          <button type="button" id="nav-profile" class="nav-chip" title="Paddock pass">You</button>
+          <span class="text-xs text-slate hidden sm:inline">⚡ <span id="best-streak" class="font-mono text-white">—</span></span>
+          <span class="text-xs text-slate">↻ <span id="tokens-display" class="font-mono text-cyan">2</span></span>
+          <button type="button" id="btn-trophies" class="tap-btn rounded border border-white/20 px-2 py-1 text-xs" title="Trophy Room">🏅</button>
+          <button type="button" id="btn-restart" class="tap-btn rounded border border-white/20 px-2 py-1 text-xs font-semibold uppercase text-slate hover:border-cyan hover:text-cyan" title="Delete this season and return to the draft">Restart</button>
+        </div>
+      </div>
+      <div id="gaffer-banner" class="gaffer-banner mt-2 hidden">🧠 GAFFER MODE: ACTIVE (1.5× XP)</div>
+      <div id="restart-confirm" class="restart-confirm hidden">
+        <p>Restart deletes this season and returns you to the draft.</p>
+        <button type="button" id="btn-restart-yes">Delete season</button>
+        <button type="button" id="btn-restart-no">Keep playing</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-3xl px-4 pb-28 pt-4">
+    <section id="screen-landing" class="screen">
+      <div class="login-hero">
+        <p class="kicker">F1 Multiverse</p>
+        <h1>Ten races.<br>Your garage.</h1>
+        <p class="login-lead">Draft a car, two drivers, and a principal from different eras. Qualifying sets the grid. The race can still throw it away. Ten Sundays decide the championship.</p>
+      </div>
+      <div class="landing-points">
+        <div><strong>Build</strong><span>Spin a chassis, a lineup, and a team boss.</span></div>
+        <div><strong>Race</strong><span>Set tires and power, then watch qualifying and the grand prix move.</span></div>
+        <div><strong>Chase</strong><span>A 20-driver table. Your cars are marked. The last rounds can be a title fight.</span></div>
+      </div>
+      <button type="button" id="btn-start-playing" class="sim-btn w-full mt-6">START PLAYING</button>
+      <p id="landing-note" class="landing-note"></p>
+      <button type="button" id="btn-switch-callsign" class="tap-btn landing-switch hidden">Use a different callsign</button>
+      <button type="button" id="btn-feedback" class="tap-btn mt-4 text-xs text-slate hover:text-cyan">Send feedback</button>
+    </section>
+
+    <!-- Feedback Modal -->
+    <div id="feedback-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2 class="text-xl font-bold mb-4">Send Feedback</h2>
+        <p class="text-sm text-slate mb-4">Help us improve F1 Multiverse by sharing your thoughts.</p>
+        <textarea id="feedback-text" class="w-full p-3 rounded bg-charcoal border border-white/20 text-white mb-4" rows="5" placeholder="Your feedback..."></textarea>
+        <div class="flex gap-2">
+          <button type="button" id="btn-submit-feedback" class="sim-btn flex-1">Send</button>
+          <button type="button" id="btn-cancel-feedback" class="tap-btn">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <section id="screen-login" class="screen hidden">
+      <div class="login-hero">
+        <p class="kicker">Paddock pass</p>
+        <h1>Build a team.<br>Survive the season.</h1>
+        <p class="login-lead">A callsign is your name on the timing tower and in multiplayer rooms. It stays on this device.</p>
+        <form id="login-form" class="login-form">
+          <label for="callsign-input">Callsign</label>
+          <input id="callsign-input" maxlength="16" autocomplete="off" placeholder="e.g. Apex" required />
+          <button type="submit" class="sim-btn w-full">ENTER THE PADDOCK</button>
+        </form>
+        <div id="callsign-warning" class="callsign-warning hidden">
+          <p id="callsign-warning-copy"></p>
+          <button type="button" id="btn-confirm-switch" class="sim-btn w-full">DELETE SEASON AND SWITCH</button>
+          <button type="button" id="btn-cancel-switch" class="tap-btn landing-switch">Keep the current callsign</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODE HUB -->
+    <section id="screen-hub" class="screen hidden">
+      <div class="hub-hero">
+        <p class="kicker" id="hub-greeting">Paddock</p>
+        <h1>Your garage.<br>Ten Sundays.</h1>
+        <p class="login-lead">Draft a chassis, two drivers and a principal. Qualifying sets the grid. The race can still bite.</p>
+      </div>
+      <div class="grid gap-4">
+        <button type="button" id="btn-continue" class="hub-card continue hidden">
+          <span class="hub-icon">▶</span>
+          <strong>Continue weekend</strong>
+          <p id="continue-blurb">Pick up the season already in the garage.</p>
+        </button>
+        <button type="button" id="btn-solo-career" class="hub-card solo">
+          <span class="hub-icon">🏁</span>
+          <strong>Solo Career</strong>
+          <p>One team. A 10-race championship. No cut line.</p>
+        </button>
+        <button type="button" id="btn-open-multi" class="hub-card tournament">
+          <span class="hub-icon">🏆</span>
+          <strong>Multiplayer</strong>
+          <p>Daily public lobby, or a private room you can share.</p>
+        </button>
+      </div>
+    </section>
+
+    <section id="screen-multi" class="screen hidden">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-2xl font-extrabold">Multiplayer</h2>
+        <button type="button" id="btn-multi-home" class="text-xs text-slate hover:text-cyan uppercase tracking-widest">← Home</button>
+      </div>
+      <div class="grid gap-4 mb-6">
+        <button type="button" id="btn-tournament-clash" class="hub-card tournament">
+          <span class="hub-icon">🌐</span>
+          <strong>Daily public lobby</strong>
+          <p>Async field for today. Bottom 50% miss the cut. Same shape as a season-long leaderboard chase.</p>
+        </button>
+      </div>
+      <div class="room-card">
+        <p class="kicker">Private room</p>
+        <h3>Share a code. Compare seasons.</h3>
+        <p class="text-sm text-slate mb-3">Ghosts fill the room so it never looks empty. Your score, and any result slip a friend pastes, land on the same board.</p>
+        <div class="room-row">
+          <input id="room-code" maxlength="8" placeholder="ROOM CODE" autocomplete="off" />
+          <button type="button" id="btn-make-room" class="tap-btn rounded border border-white/20 px-3 py-2 text-xs font-bold uppercase">New</button>
+        </div>
+        <div class="mt-3 flex flex-col gap-2">
+          <button type="button" id="btn-join-room" class="sim-btn w-full">JOIN ROOM &amp; BUILD A TEAM</button>
+          <button type="button" id="btn-view-room" class="tap-btn w-full rounded border border-cyan/40 py-3 text-sm font-bold uppercase tracking-widest text-cyan">View room board</button>
+        </div>
+        <div id="room-board" class="standings-box mt-4"></div>
+        <div class="mt-4">
+          <label class="strategy-pick-label" for="slip-input">Import a friend's result slip</label>
+          <textarea id="slip-input" rows="2" placeholder="F1MV|CODE|NAME|POINTS|SQUAD"></textarea>
+          <button type="button" id="btn-import-slip" class="tap-btn mt-2 w-full rounded border border-white/20 py-3 text-xs font-bold uppercase tracking-widest">Add slip to room</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen-profile" class="screen hidden">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-2xl font-extrabold">Paddock pass</h2>
+        <button type="button" id="btn-profile-home" class="text-xs text-slate hover:text-cyan uppercase tracking-widest">← Home</button>
+      </div>
+      <div id="profile-card" class="room-card"></div>
+      <button type="button" id="btn-sign-out" class="tap-btn mt-4 w-full rounded border border-white/20 py-3 text-xs font-bold uppercase tracking-widest text-slate">Sign out on this device</button>
+    </section>
+
+    <!-- TOURNAMENT LEADERBOARD (separate view — static array) -->
+    <section id="screen-tournament-board" class="screen hidden">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-2xl font-extrabold">Tournament Clash</h2>
+        <button type="button" id="btn-back-hub" class="text-xs text-slate hover:text-cyan uppercase tracking-widest">← Hub</button>
+      </div>
+      <p id="tournament-id-label" class="text-sm text-slate mb-4">—</p>
+      <div id="tournament-leaderboard"></div>
+      <button type="button" id="btn-start-clash" class="sim-btn w-full mt-6">ENTER DAILY CLASH</button>
+    </section>
+
+    <div class="mb-4 flex gap-2 hidden" id="mode-bar">
+      <button type="button" id="mode-classic" class="mode-btn active">Classic</button>
+      <button type="button" id="mode-gaffer" class="mode-btn">🧠 Gaffer Mode</button>
+    </div>
+
+    <section id="screen-draft" class="screen hidden">
+      <p class="mb-4 text-sm text-slate">Fill the garage. Spin. Draft. Go 10-0.</p>
+      <div id="draft-slots" class="grid gap-3 sm:grid-cols-2"></div>
+    </section>
+
+    <section id="screen-preview" class="screen hidden">
+      <h2 class="mb-1 text-2xl font-extrabold tracking-wide">Season entry</h2>
+      <p class="mb-3 text-sm text-slate">The field is locked. Qualifying, not this list, decides the grid every Sunday.</p>
+      <label class="strategy-pick-label" for="team-name-input">Team name</label>
+      <input id="team-name-input" class="team-name-input" maxlength="28" />
+      <div id="grid-preview" class="mb-6 overflow-hidden rounded-lg border border-white/10 bg-charcoal"></div>
+      <p class="strategy-pick-label">Pace</p>
+      <div class="pad-row three" id="agg-options"></div>
+      <button type="button" id="btn-simulate" class="sim-btn w-full">START SEASON</button>
+    </section>
+
+    <section id="screen-racing" class="screen hidden has-race-dock">
+      <div class="play-layout">
+      <aside class="rail">
+        <p class="rail-kicker">Garage</p>
+        <button type="button" id="btn-side-restart" class="rail-btn">Restart</button>
+        <button type="button" id="btn-quick-result" class="rail-btn rail-btn-quiet">Quick sim</button>
+        <p class="rail-note">Runs every race still left. Tyres follow the circuit.</p>
+        <div id="quick-sim" class="quick-sim hidden">
+          <p>How should the car be driven?</p>
+          <button type="button" data-sim="push">Pushing</button>
+          <button type="button" data-sim="balance">Balanced</button>
+          <button type="button" data-sim="save">Conservative</button>
+        </div>
+      </aside>
+      <div class="play-center">
+      <div class="stat-hero mb-6">
+        <div class="stat-hero-item">
+          <span class="stat-label">Wins</span>
+          <span id="live-record" class="stat-big text-cyan">0</span>
+        </div>
+        <div class="stat-hero-item">
+          <span class="stat-label">Team Pts</span>
+          <span id="live-team-pts" class="stat-big">0</span>
+        </div>
+        <div class="stat-hero-item">
+          <span class="stat-label">Race</span>
+          <span id="race-progress" class="stat-big">0 / 10</span>
+        </div>
+      </div>
+
+      <div id="strategy-panel" class="strategy-panel mb-6">
+        <div class="strategy-header">
+          <span id="strategy-round" class="stat-label">ROUND 1 / 10</span>
+          <span id="strategy-track-flag" class="text-4xl">🏁</span>
+        </div>
+        <h2 id="strategy-track-name" class="track-title">—</h2>
+        <p id="strategy-profile" class="track-profile-text"></p>
+        <p id="title-decider" class="title-decider hidden"></p>
+        <p class="strategy-pick-label">Tyre strategy</p>
+        <div class="strat-row" id="tire-options"></div>
+        <p class="strategy-pick-label mt-4">Power</p>
+        <div class="pad-row" id="engine-options"></div>
+        <button type="button" id="btn-launch-gp" class="sim-btn sim-btn-huge w-full mt-6">🏁 LAUNCH GRAND PRIX</button>
+      </div>
+
+      <div id="race-live-panel" class="race-live-panel mb-6 hidden">
+        <div class="session-head">
+          <span id="session-kicker" class="kicker">Qualifying</span>
+          <span id="session-timer" class="session-timer">5.0</span>
+        </div>
+        <div id="session-checkbar" class="checkbar" aria-hidden="true"><i></i></div>
+        <button type="button" id="btn-skip-session" class="skip-session hidden">SHOW RESULT</button>
+        <h2 id="session-title" class="track-title">Classification</h2>
+        <p id="session-note" class="session-ticker"></p>
+        <div id="session-tower" class="timing-tower"></div>
+        <div id="session-awards" class="session-awards hidden"></div>
+        <p id="session-swing" class="session-swing hidden"></p>
+        <p id="result-next" class="result-next hidden"></p>
+        <div id="grid-call" class="grid-call hidden">
+          <p class="strategy-pick-label">Pit call</p>
+          <div id="grid-call-summary" class="grid-call-summary"></div>
+          <div class="pad-row three" id="grid-call-options"></div>
+        </div>
+      </div>
+
+      <div id="telemetry-panel" class="telemetry-panel mb-6 hidden">
+        <h3 class="section-title">Your Result</h3>
+        <div id="driver-bars" class="result-bars"></div>
+      </div>
+
+      <div class="standings-section">
+        <div class="standings-head">
+          <h3 class="section-title">Drivers' championship</h3>
+          <span class="text-xs text-slate">All 20 · your cars highlighted</span>
+        </div>
+        <div id="live-standings" class="standings-box wdc-table"></div>
+      </div>
+      </div>
+      <aside class="rail rail-drivers" id="driver-rail"></aside>
+      </div>
+    </section>
+
+    <section id="screen-upgrade" class="screen hidden">
+      <div class="mb-2 text-xs font-semibold uppercase tracking-widest text-f1red">Mid-Season R&D · Transfer Window</div>
+      <h2 class="mb-2 text-3xl font-extrabold">Patch Your Flaw</h2>
+      <p class="mb-4 text-sm text-slate">Study who is carrying — then unlock one upgrade.</p>
+      <div id="dilemma-panel" class="dilemma-panel mb-6"></div>
+      <div id="upgrade-cards" class="grid gap-3"></div>
+    </section>
+
+    <section id="screen-finale" class="screen hidden relative">
+      <div id="invincible" class="invincible hidden">INVINCIBLE 🏆</div>
+      <div class="relative z-10">
+        <div class="finale-board">
+          <p class="kicker">Constructor points</p>
+          <div id="finale-points" class="finale-points">0</div>
+          <p id="finale-pts" class="finale-sub">—</p>
+          <table class="finale-table" id="finale-table"></table>
+        </div>
+
+        <div id="verdict-banner" class="verdict-banner mt-6"></div>
+
+        <div class="analytics-tabs mt-6 flex gap-2 overflow-x-auto">
+          <button type="button" class="tab-btn active" data-tab="carry">Carry Matrix</button>
+          <button type="button" class="tab-btn" data-tab="h2h">Squad Battle</button>
+          <button type="button" class="tab-btn" data-tab="efficiency">Efficiency</button>
+          <button type="button" id="tab-cut-btn" class="tab-btn hidden" data-tab="cut">Cut Line</button>
+        </div>
+        <div id="analytics-panels" class="mt-4">
+          <div id="tab-carry" class="analytics-panel"></div>
+          <div id="tab-h2h" class="analytics-panel hidden"></div>
+          <div id="tab-efficiency" class="analytics-panel hidden"></div>
+          <div id="tab-cut" class="analytics-panel hidden"></div>
+        </div>
+
+        <div id="finale-squad" class="finale-squad mx-auto mt-6 max-w-lg text-left"></div>
+        <div id="trophy-stats" class="mx-auto mt-4 max-w-lg rounded-lg border border-white/10 bg-charcoal p-4 text-left text-sm text-slate"></div>
+        <div class="mt-8 flex flex-col gap-3 max-w-lg mx-auto">
+          <button type="button" id="btn-share" class="sim-btn w-full">COPY SQUAD &amp; STATS</button>
+          <button type="button" id="btn-view-board" class="tap-btn w-full rounded border border-cyan/40 py-4 text-sm font-bold uppercase tracking-widest text-cyan hover:bg-cyan/10 hidden">View Cut Line Board →</button>
+          <button type="button" id="btn-next-round" class="tap-btn w-full rounded border border-cyan/40 py-4 text-sm font-bold uppercase tracking-widest text-cyan hover:bg-cyan/10 hidden">Advance to Next Round →</button>
+          <button type="button" id="btn-play-again" class="tap-btn w-full rounded border border-white/20 py-4 text-sm font-bold uppercase tracking-widest hover:border-cyan hover:text-cyan">Restart · back to the draft</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="spin-modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-panel">
+      <div id="spin-cycling" class="spin-cycle text-center py-10">
+        <div class="cycle-line text-slate">—</div>
+        <div class="cycle-name text-3xl font-extrabold">SPINNING</div>
+      </div>
+      <div id="spin-result" class="hidden"></div>
+      <div id="spin-actions" class="mt-4 grid grid-cols-2 gap-2 hidden">
+        <button type="button" id="btn-choose" class="action-primary">CHOOSE</button>
+        <button type="button" id="btn-respin" class="action-secondary">RE-SPIN (2)</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="crisis-modal" class="modal crisis hidden" role="dialog" aria-modal="true">
+    <div class="modal-panel border-f1red/50">
+      <div id="crisis-flag" class="text-4xl text-center mb-2">🇧🇪</div>
+      <h2 id="crisis-title" class="text-center text-2xl font-extrabold tracking-wide text-f1red mb-2">RAIN WARNING</h2>
+      <p class="mb-6 text-center text-sm text-slate">Strategic pivot — choose now.</p>
+      <div class="grid gap-3">
+        <button type="button" id="btn-pit" class="crisis-btn">PIT FOR WET TYRES</button>
+        <button type="button" id="btn-stay" class="crisis-btn outline">STAY OUT ON SLICKS</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="trophy-modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-panel">
+      <h2 class="text-xl font-extrabold mb-1">🏅 Multiverse Trophies</h2>
+      <p id="trophy-progress" class="text-sm text-slate mb-4">0 / 12 unlocked</p>
+      <div id="trophy-grid" class="trophy-grid"></div>
+      <button type="button" id="btn-close-trophies" class="action-secondary w-full mt-4">CLOSE</button>
+    </div>
+  </div>
+
+  <div id="toast-stack" class="toast-stack"></div>
+
+  <div id="weather-overlay" class="weather-overlay"></div>
+
+  <div id="incident-modal" class="incident-modal hidden" role="alertdialog" aria-modal="true">
+    <div class="incident-flash">
+      <span id="incident-icon" class="incident-icon">🚨</span>
+      <h2 id="incident-title" class="incident-title">RACE INCIDENT</h2>
+      <p id="incident-desc" class="incident-desc">—</p>
+      <p id="incident-headline" class="incident-headline"></p>
+    </div>
+  </div>
+
+  <div id="race-dock" class="race-dock hidden">
+    <button type="button" id="btn-continue-weekend" class="dock-btn">CONTINUE TO NEXT RACE →</button>
+  </div>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "/js/gameEngine.js": "/js/gameEngine.js?v=22",
+        "/js/storage.js": "/js/storage.js?v=12",
+        "/js/data.js": "/js/data.js?v=12",
+        "/js/analytics.js": "/js/analytics.js?v=12",
+        "/js/tournament.js": "/js/tournament.js?v=12",
+        "/js/trophies.js": "/js/trophies.js?v=12",
+        "/js/drama.js": "/js/drama.js?v=12"
+      }
+    }
+  </script>
+  <script type="module" src="js/app.js?v=27"></script>
+</body>
+</html>

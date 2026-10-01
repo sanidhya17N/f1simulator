@@ -1,0 +1,13 @@
+{
+  "name": "f1-multiverse",
+  "private": true,
+  "type": "module",
+  "description": "F1 Multiverse — browser season simulator",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/e2e.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

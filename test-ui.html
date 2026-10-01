@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UI Test</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #0b0c10; color: white; }
+    .test-btn { 
+      padding: 15px 30px; 
+      background: #66fcf1; 
+      color: #0b0c10; 
+      border: none; 
+      font-size: 16px; 
+      cursor: pointer; 
+      margin: 10px;
+    }
+    .test-btn:hover { background: #4fd8d0; }
+    #result { margin-top: 20px; padding: 10px; background: #1f2833; }
+  </style>
+</head>
+<body>
+  <h1>UI Functionality Test</h1>
+  <button class="test-btn" id="test1">Test 1: Basic Click</button>
+  <button class="test-btn" id="test2">Test 2: Event Listener</button>
+  <button class="test-btn" id="test3">Test 3: DOM Manipulation</button>
+  <div id="result">Click buttons to test functionality...</div>
+
+  <script>
+    document.getElementById('test1').addEventListener('click', function() {
+      document.getElementById('result').textContent = 'Test 1 PASSED: Basic click works!';
+      this.style.background = '#00ff88';
+    });
+
+    document.getElementById('test2').addEventListener('click', function() {
+      document.getElementById('result').textContent = 'Test 2 PASSED: Event listeners work!';
+      this.style.background = '#00ff88';
+    });
+
+    document.getElementById('test3').addEventListener('click', function() {
+      const div = document.getElementById('result');
+      div.textContent = 'Test 3 PASSED: DOM manipulation works!';
+      div.style.color = '#66fcf1';
+      this.style.background = '#00ff88';
+    });
+  </script>
+</body>
+</html>
